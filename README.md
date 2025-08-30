@@ -22,12 +22,18 @@ After downloading, place the relevant files in the `data/` directory as required
 ## Getting Started
 
 1. Download the dataset from the Kaggle link above.
-2. Place the dataset files in the `data/` directory.
+2. Place the dataset files (e.g., `RAW_recipes.csv`, `RAW_interactions.csv`) in the `data/` directory.
 3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-4. Run the data processing and application scripts as needed.
+4. **Preprocess the data:**
+   Run the following command to generate the processed data files:
+   ```bash
+   python src/process_data_efficient.py
+   ```
+   This will create the necessary files in the `processed_data/` directory.
+5. Run the main application or analysis scripts as needed.
 
 ## License
 
